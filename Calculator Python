@@ -1,0 +1,38 @@
+import math
+operator_selection1 = "A"
+operator_selection2 = "S"
+operator_selection3 = "M"
+operator_selection4 = "D"
+operator_POWER = "POWER"
+operator_MOD = "MOD"
+operator_ABS = "ABS"
+num1 = input("Please enter in your first number: ")
+operator = input("Please enter in your operator[A,S,M,D,POWER,MOD,ABS]: ")
+num2 = input("Please enter in your second number: ")
+
+result1 = float(num1) + float(num2)
+result2 = float(num1) - float(num2)
+result3 = float(num1) * float(num2)
+result4 = float(num1) / float(num2)
+result6 = pow(float(num1) , float(num2))
+result7 = float(num1) % float(num2)
+result8 = abs(float(num1)) , abs(float(num1))
+if operator == operator_selection1 :
+  print(result1)
+elif operator == operator_selection2 :
+  print(result2)
+elif operator == operator_selection3 :
+  print(result3)
+elif operator == operator_selection4 :
+  print(result4)
+elif operator == operator_POWER :
+  print(result6)
+elif operator == operator_MOD :
+  print(result7)
+# Negative Numbers not working
+elif operator == operator_ABS : 
+  print(result8)
+else : 
+  print("ERROR")
+
+
