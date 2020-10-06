@@ -6,33 +6,45 @@ operator_selection4 = "D"
 operator_POWER = "POWER"
 operator_MOD = "MOD"
 operator_ABS = "ABS"
+operator_ROOT = "ROOT"
 num1 = input("Please enter in your first number: ")
-operator = input("Please enter in your operator[A,S,M,D,POWER,MOD,ABS]: ")
-num2 = input("Please enter in your second number: ")
+operator = input("Please enter in your operator[A,S,M,D,POWER,MOD,ABS, ROOT]: ")
 
-result1 = float(num1) + float(num2)
-result2 = float(num1) - float(num2)
-result3 = float(num1) * float(num2)
-result4 = float(num1) / float(num2)
-result6 = pow(float(num1) , float(num2))
-result7 = float(num1) % float(num2)
-result8 = abs(float(num1)) , abs(float(num1))
-if operator == operator_selection1 :
-  print(result1)
-elif operator == operator_selection2 :
-  print(result2)
-elif operator == operator_selection3 :
-  print(result3)
-elif operator == operator_selection4 :
-  print(result4)
-elif operator == operator_POWER :
-  print(result6)
-elif operator == operator_MOD :
-  print(result7)
-# Negative Numbers not working
-elif operator == operator_ABS : 
-  print(result8)
-else : 
-  print("ERROR")
+if operator == operator_ABS:
+  print(abs(float(num1)))
+elif operator == operator_ROOT :
+    if float(num1) < 0 :
+      print("Can't do square root on negative numbers")
+    else:
+      print(math.sqrt(float(num1)))
+else:  
+  num2 = input("Please enter in your second number: ")
+  result1 = float(num1) + float(num2)
+  result2 = float(num1) - float(num2)
+  result3 = float(num1) * float(num2)
+  result4 = float(num1) / float(num2)
+  result6 = pow(float(num1) , float(num2))
+  result7 = float(num1) % float(num2)
+  if operator == operator_selection1 :
+    print(result1)
+  elif operator == operator_selection2 :
+    print(result2)
+  elif operator == operator_selection3 :
+    print(result3)
+  elif operator == operator_selection4 :
+    print(result4)
+  elif operator == operator_POWER :
+    print(result6)
+  elif operator == operator_MOD :
+    print(result7)
+  else:
+    print('ERROR')
+  
+
+     
+  
+       
+  
+
 
 
